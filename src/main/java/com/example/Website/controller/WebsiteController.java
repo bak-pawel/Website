@@ -21,7 +21,7 @@ public class WebsiteController {
         this.websiteService = websiteService;
     }
 
-    @GetMapping("/")
+    @GetMapping("//")
     public ModelAndView home() {
         ModelAndView modelAndView = new ModelAndView("home");
         return modelAndView;
