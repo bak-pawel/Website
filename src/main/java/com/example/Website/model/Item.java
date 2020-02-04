@@ -1,16 +1,21 @@
 package com.example.Website.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
 public class Item {
-    String id;
+    @Id
+    int id;
     String kolumna1;
 
 
-    public String getId() {
+
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -22,4 +27,11 @@ public class Item {
         this.kolumna1 = kolumna1;
     }
 
+    public Item() {
+    }
+
+    public Item(Integer id, String kolumna1) {
+        this.id = id;
+        this.kolumna1 = kolumna1;
+    }
 }
